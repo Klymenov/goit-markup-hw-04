@@ -1,0 +1,242 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+* {
+    box-sizing: border-box;
+}
+/*header section*/
+
+.header-section {
+    background-color: #fff;
+    border-bottom: 1px solid #ECECEC;
+}
+.header-content {
+    display: flex;
+}
+.navigation {
+    display: flex;
+    margin-right: auto;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: #2196F3;
+    text-decoration: none;
+    display: block;
+    margin: 24px 93px 25px 0px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+
+}
+.header-studio {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: auto 0;
+}
+.nav-list :last-child {
+    margin-right: 0;
+}
+.nav-element {
+    margin-right: 50px;
+}
+.nav-link {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    padding: 32px 0px;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: #2196F3;
+    text-decoration: none;
+}
+.contact-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: auto 0;
+}
+.contact-list :last-child {
+    margin-right: 0px;
+}
+.contact-element {
+    text-decoration: none;
+    margin-right: 50px;
+}
+.contact-link {
+    display: block;
+    text-decoration: none;
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding: 32px 0px;
+}
+.contact-link:focus,
+.contact-link:hover {
+    color: #2196F3;
+    text-decoration: none;
+}
+/*main-section*/
+
+.main-section {
+    background-color: #ffffff;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.main-nav {
+    width: 100%;
+    align-items: center;
+}
+.main-nav-list {
+    justify-content: center;
+    margin: 0 auto 50px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.main-nav-list :first-child {
+    margin-left: 0px;
+}
+.main-nav-element {
+    margin-left: 8px;
+}
+button:hover,
+button:focus {
+    background-color: #2196F3;
+    color: white;
+}
+button {
+    font-family: 'Roboto', sans-serif;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding: 6px 22px;
+}
+
+.card-set {
+}
+.card-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: -30px;
+}
+.card-element {
+    flex-basis: calc(100% / 3 - 30px);
+    /* flex-basis:calc((100% - 60px) / 3); */
+    margin-right: 30px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.card-element:nth-child(3n) {
+    margin-right: 0px;
+}
+.card-text {
+    margin: 0;
+    padding: 19px 24px 20px;
+}
+.card-heading {
+    display: inline;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+}
+.card-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0;
+}
+
+/*footer section*/
+
+.footer-section {
+    background-color: #2F303A;
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-content {
+
+}
+.footer-nav {
+    display: inline-block;    
+}
+.footer-logo {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+.footer-studio {
+    color: #ffffff
+}
+.footer-list {
+    padding: 0px;
+    list-style: none;
+    margin: 0;
+    margin-top: 20px;
+}
+.footer-element {
+    margin-bottom: 9px;
+}
+.footer-adress {
+
+}
+.footer-adress-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer-link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
