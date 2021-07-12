@@ -11,6 +11,9 @@ body {
 * {
     box-sizing: border-box;
 }
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 /*header section*/
 
 .header-section {
@@ -29,11 +32,13 @@ body {
     color: #2196F3;
     text-decoration: none;
     display: block;
-    margin: 24px 93px 25px 0px;
+    margin-right: 93px;
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
 }
 .header-studio {
@@ -77,11 +82,13 @@ body {
     margin-right: 0px;
 }
 .contact-element {
+    /* display: inline-flex; */
     text-decoration: none;
     margin-right: 50px;
+    align-items: center;
 }
 .contact-link {
-    display: block;
+    display: flex;
     text-decoration: none;
     color: #757575;
     font-weight: 500;
@@ -89,6 +96,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
     padding: 32px 0px;
+    align-items: center;
 }
 .contact-link:focus,
 .contact-link:hover {
@@ -103,6 +111,33 @@ body {
     background-size: cover;
     background-position: center;
 }
+.contact-icon {
+    display: block;
+    /* padding-right: 10px; */
+}
+
+/* .mail-link::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    background-image: url(../img/svg/mail.svg) ;
+    /* padding-right: 10px; */
+    /* margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+} */
+/*.tel-link::before {
+    content: "";
+    width: 10px;
+    height: 16px;
+    background-image: url(../img/svg/header_phone.svg) ;
+    /* padding-right: 10px; */
+    /* margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+} */
 
 /*main section*/
 
@@ -216,7 +251,7 @@ body {
     background-repeat: no-repeat;
     background-color: #F5F4FA;
     border-radius: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 .accents-heading {
     display: inline-block;
@@ -311,7 +346,7 @@ body {
 .team-text {
     justify-content: center;
     align-items: center;
-    padding: 30px 59px;
+    padding: 30px 59px 16px;
 }
 .team-member {
     color: #212121;
@@ -332,8 +367,98 @@ body {
     letter-spacing: 0.03em;
     margin: 0px;
 }
+.team-icons-list {
+    padding: 0px 32px 30px;
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+.team-icons-list:first-child {
+    margin-left: 0;
+}
+.team-icons-element {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.link-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: red;
+}
+.team-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: royalblue;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Clients section */
+
+.clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+.clients-list {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.clients-list:last-child {
+    margin-right: 0;
+}
+.clients-element {
+    display: flex;
+    margin-right: 30px;
+    height: 92px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+
+}
+.clients-link {
+    width: 170px;
+    height: 92px;
+}
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8
+}
+.clients-icon:hover,
+.clients-icon:focus {
+    fill: #2196F3;
+}
+.clients-element:hover,
+.clients-element:focus {
+    border-color: #2196F3;
+}
 /*footer section*/
 
+.footer-container {
+    display: flex;
+}
 .footer-section {
     background-color: #2F303A;
     padding-top: 60px;
@@ -387,4 +512,31 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+.footer-social {
+    display: inline-block;
+    margin-left: 70px;
+}
+.social-heading {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.social-list {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.social-item {
+    width: 44px;
+    height: 44px;
+}
+.social-link {
+    width: 44px;
+    height: 44px;
 }

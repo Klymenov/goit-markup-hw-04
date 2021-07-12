@@ -10,6 +10,9 @@ body {
 * {
     box-sizing: border-box;
 }
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 /*header section*/
 
 .header-section {
@@ -28,11 +31,13 @@ body {
     color: #2196F3;
     text-decoration: none;
     display: block;
-    margin: 24px 93px 25px 0px;
+    margin-right: 93px;
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
 }
 .header-studio {
@@ -146,19 +151,21 @@ button {
     margin: 0;
     padding: 0;
     width: 100%;
-    margin-top: -30px;
+    margin-bottom: -30px;
 }
 .card-element {
     flex-basis: calc(100% / 3 - 30px);
-    /* flex-basis:calc((100% - 60px) / 3); */
     margin-right: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
 .card-element:nth-child(3n) {
     margin-right: 0px;
+}
+.card-element:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
 }
 .card-text {
     margin: 0;
