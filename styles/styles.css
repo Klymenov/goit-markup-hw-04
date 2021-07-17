@@ -82,7 +82,7 @@ body {
     margin-right: 0px;
 }
 .contact-element {
-    /* display: inline-flex; */
+    display: flex;
     text-decoration: none;
     margin-right: 50px;
     align-items: center;
@@ -112,8 +112,8 @@ body {
     background-position: center;
 }
 .contact-icon {
-    display: block;
-    /* padding-right: 10px; */
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 /* .mail-link::before {
@@ -388,16 +388,22 @@ body {
     display: inline-block;
     width: 20px;
     height: 20px;
-    fill: red;
+    fill: #AFB1B8;
+}
+.link-icon:hover {
+    fill: #fff;
 }
 .team-link {
-    display: inline-block;
+    display: flex;
     width: 44px;
     height: 44px;
-    background-color: royalblue;
+    background-color: #fff;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+}
+.team-link:hover {
+    background-color: #2196F3;
 }
 
 /* Clients section */
@@ -438,10 +444,14 @@ body {
 
 }
 .clients-link {
+    display: flex;
     width: 170px;
     height: 92px;
+    align-items: center;
+    justify-content: center;
 }
 .clients-icon {
+    display: flex;
     width: 106px;
     height: 60px;
     fill: #AFB1B8
@@ -523,8 +533,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 .social-list {
     display: flex;
@@ -533,10 +542,27 @@ color: #FFFFFF;
     margin: 0px;
 }
 .social-item {
+    margin-right: 10px;
     width: 44px;
     height: 44px;
 }
+.social-list:last-child {
+    margin-right: 0px;
+}
 .social-link {
+    background-color: #43444D;
+    border-radius: 50%;
+    display: flex;
     width: 44px;
     height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+.social-link:hover {
+    background-color: #2196F3;
+}
+.footer-social-svg {
+    fill: #FFFFFF;
+    height: 20px;
+    width: 20px;
 }
