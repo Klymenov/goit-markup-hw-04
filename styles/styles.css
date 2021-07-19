@@ -78,13 +78,13 @@ body {
     padding: 0;
     margin: auto 0;
 }
-.contact-list :last-child {
-    margin-right: 0px;
+.contact-list :first-child {
+    margin-left: 0px;
 }
 .contact-element {
     display: flex;
     text-decoration: none;
-    margin-right: 50px;
+    margin-left: 50px;
     align-items: center;
 }
 .contact-link {
@@ -156,7 +156,6 @@ body {
 .hero-content {
     width: 100%;
     margin: 0 auto;
-    /* display: inline-block; */
 }
 .hero-button {
     background-color: #2196F3;
@@ -385,7 +384,7 @@ body {
     align-items: center;
 }
 .link-icon {
-    display: inline-block;
+    display: flex;
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
@@ -402,8 +401,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-.team-link:hover {
+.team-link:hover,
+.team-link:focus {
     background-color: #2196F3;
+}
+.team-link:hover .link-icon,
+.team-link:focus .link-icon {
+    fill: #fff;
 }
 
 /* Clients section */
@@ -420,25 +424,26 @@ body {
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 50px;
+    margin-top: 0px;
 }
 .clients-list {
     width: 100%;
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     list-style: none;
 }
 .clients-list:last-child {
-    margin-right: 0;
+    margin-right: 0px;
 }
 .clients-element {
-    display: flex;
+    /* display: flex; */
     margin-right: 30px;
     height: 92px;
     width: 170px;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
+    /* border: 1px solid #AFB1B8; */
+    /* box-sizing: border-box; */
+    /* border-radius: 4px; */
     align-items: center;
     justify-content: center;
 
@@ -449,6 +454,20 @@ body {
     height: 92px;
     align-items: center;
     justify-content: center;
+    /* border-color: #2196F3; */
+    fill: currentColor;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.clients-link:hover,
+.clients-link:focus {
+    fill: #2196F3;
+    border-color: #2196F3;
+    fill: currentColor;
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: #2196F3;
 }
 .clients-icon {
     display: flex;
@@ -460,10 +479,7 @@ body {
 .clients-icon:focus {
     fill: #2196F3;
 }
-.clients-element:hover,
-.clients-element:focus {
-    border-color: #2196F3;
-}
+
 /*footer section*/
 
 .footer-container {
@@ -473,9 +489,6 @@ body {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-}
-.footer-content {
-
 }
 .footer-nav {
     display: inline-block;
