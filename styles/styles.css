@@ -571,7 +571,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     background-color: #2196F3;
 }
 .footer-social-svg {
